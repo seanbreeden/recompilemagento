@@ -68,11 +68,6 @@ echo -e "\e[\e[43m                                                           \e[
 echo
 php ./vendor/bin/ece-patches apply
 echo
-echo -e "\e[\e[44m                                                           \e[0m"
-echo -e "\e[\e[44m Deleting generated folder...                              \e[0m"
-echo -e "\e[\e[44m                                                           \e[0m"
-rm -rf generated/* > /dev/null
-echo
 echo -e "\e[\e[45m                                                           \e[0m"
 echo -e "\e[\e[45m Flushing caches...                                        \e[0m"
 echo -e "\e[\e[45m                                                           \e[0m"
