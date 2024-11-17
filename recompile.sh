@@ -56,12 +56,6 @@ php bin/magento ind:res
 echo
 php bin/magento ind:rei
 echo
-echo -e "\e[\e[42m                                                           \e[0m"
-echo -e "\e[\e[42m Running dependency injection...                           \e[0m"
-echo -e "\e[\e[42m                                                           \e[0m"
-echo
-php bin/magento setup:di:compile
-echo
 echo -e "\e[\e[43m                                                           \e[0m"
 echo -e "\e[\e[43m Applying patches...                                       \e[0m"
 echo -e "\e[\e[43m                                                           \e[0m"
@@ -75,6 +69,12 @@ echo
 php bin/magento c:c
 echo
 php bin/magento c:f
+echo
+echo -e "\e[\e[42m                                                           \e[0m"
+echo -e "\e[\e[42m Running dependency injection...                           \e[0m"
+echo -e "\e[\e[42m                                                           \e[0m"
+echo
+php bin/magento setup:di:compile
 echo
 echo -e "\e[\e[46m                                                           \e[0m"
 echo -e "\e[\e[46m Complete.                                                 \e[0m"
